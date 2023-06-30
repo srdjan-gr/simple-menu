@@ -31,13 +31,14 @@ body{
     position: relative;
     z-index: 10;
     height: 10px;
-    /* border-radius: 3px; */
     background-color: azure;
-    transition: all .1s ease-in;
+    transition: all .2s ease-in;
 }
 
 .line-middle{
-    margin: 10px 0;  
+    margin: 10px 0; 
+    width: 80px;
+    transition: all .3s ease-in;
 }
 
 .rotate.line-top{
@@ -51,6 +52,7 @@ body{
 .fade.line-middle{
     opacity: 0;
     width: 0px;
+    transition: all .3s ease-in;
 }
 
 
