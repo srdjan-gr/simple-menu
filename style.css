@@ -1,0 +1,96 @@
+
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #222422;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+
+
+/* Hamburger 2 */
+.menu-container {
+    cursor: pointer;
+    margin: 30px;
+    width: 80px;
+}
+
+.menu {
+    display: block;
+    position: relative;
+    z-index: 10;
+    height: 10px;
+    /* border-radius: 3px; */
+    background-color: azure;
+    transition: all .1s ease-in;
+}
+
+.line-middle{
+    margin: 10px 0;  
+}
+
+.rotate.line-top{
+    transform: rotate(45deg) translate(12px, 16px);
+}
+
+.rotate.line-bottom{
+    transform: rotate(-45deg) translate(12px, -16px);
+}
+
+.fade.line-middle{
+    opacity: 0;
+    width: 0px;
+}
+
+
+
+/* Menu */
+.mobile-container{
+    position: absolute;
+    top: -400px;
+    left: -750px;
+    transform: translate(-400px, -500px);
+    background-color: rgb(255, 174, 174);
+    width: 1200px;
+    height: 1200px;
+    z-index: 5;
+    border-radius: 50%;
+    transition: all .2s ease-in;
+}
+
+.mobile-container ul{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    bottom: 460px;
+    right: 80px;
+    width: 300px;
+    color: azure;
+    list-style-type: none;
+}
+
+.mobile-container ul li{
+    margin-top: 16px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.mobile-container ul li:hover{
+    color: #474747;
+}
+
+
+.mobile-container--show{
+    top: -400px;
+    transform: translate(0px, 0px);
+}

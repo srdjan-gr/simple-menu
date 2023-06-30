@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hamburger</title>
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <div class="mobile-container">
+        <ul>
+            <li>Home</li>
+            <li>Shop</li>
+            <li>Gallery</li>
+            <li>About Us</li>
+        </ul>
+    </div>
+
+    <!-- Hamburger -->
+    <div class="menu-container">
+        <span class="menu line-top"></span>
+        <span class="menu line-middle"></span>
+        <span class="menu line-bottom"></span>
+    </div>
+
+
+    <script>
+
+        const menuContainer = document.querySelector('.menu-container')
+        const menu = document.querySelector('.menu')
+        const lineTop = document.querySelector('.line-top')
+        const lineMiddle = document.querySelector('.line-middle')
+        const lineBottom = document.querySelector('.line-bottom')
+        const mobileMenu = document.querySelector('.mobile-container')
+
+        menuContainer.addEventListener('click', () => {
+
+            lineTop.classList.toggle('rotate')
+            lineBottom.classList.toggle('rotate')
+            lineMiddle.classList.toggle('fade')
+            mobileMenu.classList.toggle('mobile-container--show')
+        })
+
+    </script>
+</body>
+
+</html>
